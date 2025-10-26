@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yared Atrsaw - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.344.0/lucide.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  </head>
+  <body>
+    <div class="min-h-screen">
+        <!-- Hero Section -->
+        <header class="hero-section">
+            <div class="max-w-6xl mx-auto px-6 pt-20 pb-16">
+                <div class="text-center mb-8">
+                    <div class="flex justify-center mb-6 animate-fade-in">
+                        <div class="relative group">
+                            <div class="relative w-40 h-40 overflow-hidden border-4 border-white shadow-xl">
+                                <img
+                                    src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                    alt="Yared Atrsaw"
+                                    class="w-full h-full object-cover"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="hero-title animate-fade-in">
+                        YARED ATRSAW
+                    </h1>
+                    <p class="hero-subtitle animate-fade-in" style="animation-delay: 0.1s;">
+                        BUILDING AI SYSTEMS THAT SERVE COMMUNITIES
+                    </p>
+                    <div class="flex gap-6 justify-center text-sm animate-fade-in" style="animation-delay: 0.2s;">
+                        <a href="mailto:yaredatrsaw357@gmail.com" class="flex items-center gap-2 text-white hover:text-gray-200 transition-all hover:scale-110">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                            <span class="font-medium">Email</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-2 text-white hover:text-gray-200 transition-all hover:scale-110">
+                            <i data-lucide="github" class="w-5 h-5"></i>
+                            <span class="font-medium">GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bio -->
+                <div class="max-w-4xl mx-auto mt-16">
+                    <div class="bg-white p-8 shadow-lg border border-gray-200">
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            I'm a high school student from <span class="font-semibold text-gray-900">Addis Ababa, Ethiopia</span>, working at the intersection of{' '}
+                            <span class="font-semibold text-gray-900">artificial intelligence, natural language processing, and systems security</span>.
+                            Currently developing AI-based security systems at <span class="font-semibold text-gray-900">INSA</span> and conducting
+                            NLP research for Ethiopian languages at <span class="font-semibold text-gray-900">Addis Ababa University</span>.
+                            I'm interested in how AI systems can serve communities, especially in low-resource language contexts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Category Navigation -->
+        <section class="experience-section">
+            <div class="max-w-6xl mx-auto px-6 py-12">
+                <h2 class="section-header">Experience</h2>
+                <div class="filter-container">
+                    <button class="filter-btn active" data-category="AI">
+                        <i data-lucide="code" class="w-5 h-5"></i>
+                        Tech
+                    </button>
+                    <button class="filter-btn" data-category="Entrepreneurship">
+                        <i data-lucide="briefcase" class="w-5 h-5"></i>
+                        Leadership
+                    </button>
+                    <button class="filter-btn" data-category="Sport">
+                        <i data-lucide="trophy" class="w-5 h-5"></i>
+                        Athletic
+                    </button>
+                </div>
+
+                <!-- Experience Cards -->
+                <div class="space-y-6" id="experience-container">
+                    <!-- Experience cards will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards & Skills -->
+        <section class="skills-section">
+            <div class="max-w-6xl mx-auto px-6 py-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Achievements & Expertise</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-br from-yellow-50 to-orange-50 p-8 shadow-lg border border-yellow-200">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="p-3 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg">
+                                <i data-lucide="award" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Recognition</h3>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3 p-3 bg-white/60 rounded-lg">
+                                <i data-lucide="star" class="w-5 h-5 mt-0.5 text-yellow-500 flex-shrink-0"></i>
+                                <div>
+                                    <span class="font-semibold text-gray-900">International Research Olympiad</span>
+                                    <p class="text-sm text-gray-600">Top 10% globally</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3 p-3 bg-white/60 rounded-lg">
+                                <i data-lucide="star" class="w-5 h-5 mt-0.5 text-yellow-500 flex-shrink-0"></i>
+                                <div>
+                                    <span class="font-semibold text-gray-900">Academic Competition</span>
+                                    <p class="text-sm text-gray-600">First Place Winner</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3 p-3 bg-white/60 rounded-lg">
+                                <i data-lucide="star" class="w-5 h-5 mt-0.5 text-yellow-500 flex-shrink-0"></i>
+                                <div>
+                                    <span class="font-semibold text-gray-900">Addis Ababa Debate Championship</span>
+                                    <p class="text-sm text-gray-600">First Place Winner</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3 p-3 bg-white/60 rounded-lg">
+                                <i data-lucide="star" class="w-5 h-5 mt-0.5 text-yellow-500 flex-shrink-0"></i>
+                                <div>
+                                    <span class="font-semibold text-gray-900">Weyra Trading</span>
+                                    <p class="text-sm text-gray-600">Best Intern of the Summer</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 shadow-lg border border-blue-200">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="p-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg">
+                                <i data-lucide="code" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Technical Skills</h3>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="p-4 bg-white/60 rounded-lg">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <i data-lucide="terminal" class="w-4 h-4 text-blue-500"></i>
+                                    <p class="font-semibold text-gray-900">Programming Languages</p>
+                                </div>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">C++</span>
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Python</span>
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">JavaScript</span>
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">PHP</span>
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Kotlin</span>
+                                </div>
+                            </div>
+                            <div class="p-4 bg-white/60 rounded-lg">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <i data-lucide="brain" class="w-4 h-4 text-purple-500"></i>
+                                    <p class="font-semibold text-gray-900">AI & Machine Learning</p>
+                                </div>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">TensorFlow</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">PyTorch</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">NLP</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">LLMs</span>
+                                </div>
+                            </div>
+                            <div class="p-4 bg-white/60 rounded-lg">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <i data-lucide="globe" class="w-4 h-4 text-green-500"></i>
+                                    <p class="font-semibold text-gray-900">Web Technologies</p>
+                                </div>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">React</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Laravel</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Django</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Flask</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section">
+            <div class="max-w-6xl mx-auto px-6 py-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center flex items-center justify-center gap-3">
+                    <i data-lucide="code" class="w-8 h-8 text-cyan-600"></i>
+                    Projects
+                </h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="project-card" data-project="1">
+                        <div class="project-image-container">
+                            <img
+                                src="images/Amharic_NLP.png"
+                                alt="Amharic NLP Model"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Amharic NLP Model</h3>
+                            <p class="text-gray-600 mb-4 text-sm">Developed an advanced NLP model for Amharic language processing with optimized tokenization and embeddings.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tag">NLP</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">TensorFlow</span>
+                            </div>
+                            <button class="readmore-btn">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="2">
+                        <div class="project-image-container">
+                            <img
+                                src="images/ueba.png"
+                                alt="UEBA Security System"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">UEBA Security System</h3>
+                            <p class="text-gray-600 mb-4 text-sm">AI-based User and Entity Behavior Analytics system processing millions of network events for national security.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tag">AI</span>
+                                <span class="tag">Security</span>
+                                <span class="tag">Real-time Processing</span>
+                            </div>
+                            <button class="readmore-btn">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="3">
+                        <div class="project-image-container">
+                            <img
+                                src="images/agriculture census.webp"
+                                alt="Agricultural Census Platform"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Agricultural Census Platform</h3>
+                            <p class="text-gray-600 mb-4 text-sm">Designed data collection tools for Ethiopia's national agricultural census covering 400,000 households.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tag">Full-stack</span>
+                                <span class="tag">Data Engineering</span>
+                                <span class="tag">Impact</span>
+                            </div>
+                            <button class="readmore-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="blog-section">
+            <div class="max-w-6xl mx-auto px-6 py-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center flex items-center justify-center gap-3">
+                    <i data-lucide="book-open" class="w-8 h-8 text-emerald-600"></i>
+                    Blog
+                </h2>
+                <div class="space-y-6">
+                    <div class="blog-card group bg-white/90 backdrop-blur-sm p-6 shadow-lg border border-gray-200 cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl" data-blog="1">
+                        <div class="flex items-start justify-between mb-3">
+                            <h3 class="text-2xl font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">
+                                We Don't Argue Anymore, We Diagnose Each Other
+                            </h3>
+                            <i data-lucide="chevron-right" class="w-6 h-6 text-gray-400 group-hover:text-cyan-600 group-hover:translate-x-1 transition-all"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">Conversations used to be messy. They had sparks. They had yelling. They had silence afterward that smelled like reflection. Now, we talk to each other like we're forensic investigators.</p>
+                        <div class="flex items-center gap-4 text-sm text-gray-500 mb-4">
+                            <span class="flex items-center gap-1">
+                                <i data-lucide="calendar" class="w-4 h-4"></i>
+                                January 15, 2025
+                            </span>
+                            <span>•</span>
+                            <span>12 min read</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-medium flex items-center gap-1">
+                                <i data-lucide="tag" class="w-3 h-3"></i>
+                                Psychology
+                            </span>
+                            <span class="px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-medium flex items-center gap-1">
+                                <i data-lucide="tag" class="w-3 h-3"></i>
+                                Society
+                            </span>
+                            <span class="px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-medium flex items-center gap-1">
+                                <i data-lucide="tag" class="w-3 h-3"></i>
+                                Communication
+                            </span>
+                        </div>
+                        <button class="readmore-btn">Read More</button>
+                    </div>
+
+                    <div class="blog-card group bg-white/90 backdrop-blur-sm p-6 shadow-lg border border-gray-200 cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl" data-blog="2">
+                        <div class="flex items-start justify-between mb-3">
+                            <h3 class="text-2xl font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">
+                                The Automation of Taste
+                            </h3>
+                            <i data-lucide="chevron-right" class="w-6 h-6 text-gray-400 group-hover:text-cyan-600 group-hover:translate-x-1 transition-all"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">Raise your hand if you've ever said, "I don't even like this song, but it keeps popping up." Here's the thing. You didn't stumble upon that track by chance. Algorithms are playing a long game with you.</p>
+                        <div class="flex items-center gap-4 text-sm text-gray-500 mb-4">
+                            <span class="flex items-center gap-1">
+                                <i data-lucide="calendar" class="w-4 h-4"></i>
+                                January 10, 2025
+                            </span>
+                            <span>•</span>
+                            <span>10 min read</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-medium flex items-center gap-1">
+                                <i data-lucide="tag" class="w-3 h-3"></i>
+                                Technology
+                            </span>
+                            <span class="px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-medium flex items-center gap-1">
+                                <i data-lucide="tag" class="w-3 h-3"></i>
+                                Culture
+                            </span>
+                            <span class="px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-medium flex items-center gap-1">
+                                <i data-lucide="tag" class="w-3 h-3"></i>
+                                Algorithms
+                            </span>
+                        </div>
+                        <button class="readmore-btn">Read More</button>
+                    </div>
+
+                    <div class="blog-card group bg-white/90 backdrop-blur-sm p-6 shadow-lg border border-gray-200 cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl" data-blog="3">
+                        <div class="flex items-start justify-between mb-3">
+                            <h3 class="text-2xl font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">
+                                Embarrassment as an Unexplored Emotion
+                            </h3>
+                            <i data-lucide="chevron-right" class="w-6 h-6 text-gray-400 group-hover:text-cyan-600 group-hover:translate-x-1 transition-all"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">Let's talk about embarrassment. We know grief, we know anger, we know joy. They get essays, books, podcasts. Embarrassment? It hides. It sits in the corner and laughs quietly when you stumble over your words.</p>
+                        <div class="flex items-center gap-4 text-sm text-gray-500 mb-4">
+                            <span class="flex items-center gap-1">
+                                <i data-lucide="calendar" class="w-4 h-4"></i>
+                                January 5, 2025
+                            </span>
+                            <span>•</span>
+                            <span>8 min read</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-medium flex items-center gap-1">
+                                <i data-lucide="tag" class="w-3 h-3"></i>
+                                Psychology
+                            </span>
+                            <span class="px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-medium flex items-center gap-1">
+                                <i data-lucide="tag" class="w-3 h-3"></i>
+                                Emotions
+                            </span>
+                            <span class="px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-medium flex items-center gap-1">
+                                <i data-lucide="tag" class="w-3 h-3"></i>
+                                Social
+                            </span>
+                        </div>
+                        <button class="readmore-btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="max-w-6xl mx-auto px-6 py-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center flex items-center justify-center gap-3">
+                    <i data-lucide="send" class="w-8 h-8 text-blue-600"></i>
+                    Get In Touch
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8 items-start">
+                    <!-- Contact Form -->
+                    <div class="bg-white p-8 shadow-lg border border-gray-200">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Send a Message</h3>
+                        <form class="space-y-6" id="contact-form">
+                            <div>
+                                <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Name
+                                </label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    class="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
+                                    placeholder="Your name"
+                                />
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Email
+                                </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
+                                    placeholder="your.email@example.com"
+                                />
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Message
+                                </label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="6"
+                                    class="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none resize-none"
+                                    placeholder="Your message..."
+                                ></textarea>
+                            </div>
+                            <button
+                                type="submit"
+                                class="w-full bg-black text-white font-semibold py-3 px-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
+                            >
+                                <i data-lucide="send" class="w-5 h-5"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Photo Gallery -->
+                    <div class="bg-white p-8 shadow-lg border border-gray-200">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Photo Gallery</h3>
+                        <div class="gallery-container">
+                            <img id="gallery-image" src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gallery Image">
+                            <div class="flex justify-between items-center mt-4">
+                                <button id="prev-btn" class="p-2 bg-gray-200 hover:bg-gray-300 transition-colors">
+                                    <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                                </button>
+                                <span id="gallery-counter" class="text-sm text-gray-600">1 / 5</span>
+                                <button id="next-btn" class="p-2 bg-gray-200 hover:bg-gray-300 transition-colors">
+                                    <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Project Modal -->
+        <div id="project-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-6 hidden">
+            <div class="bg-white max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+                <div class="sticky top-0 bg-white border-b border-gray-200 p-6 flex items-center justify-between z-10">
+                    <h2 id="modal-title" class="text-3xl font-bold text-gray-900"></h2>
+                    <button id="close-project-modal" class="p-2 hover:bg-gray-100 transition-colors">
+                        <i data-lucide="x" class="w-6 h-6"></i>
+                    </button>
+                </div>
+                <div id="modal-image" class="relative h-64 overflow-hidden">
+                    <img class="w-full h-full object-cover" />
+                </div>
+                <div class="p-8">
+                    <div id="modal-tags" class="flex flex-wrap gap-2 mb-6"></div>
+                    <div id="modal-content" class="prose prose-lg max-w-none"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Modal -->
+        <div id="blog-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-6 hidden">
+            <div class="bg-white max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+                <div class="sticky top-0 bg-white border-b border-gray-200 p-6 flex items-center justify-between z-10">
+                    <div class="flex-1">
+                        <h2 id="blog-modal-title" class="text-3xl font-bold text-gray-900 mb-2"></h2>
+                        <div id="blog-modal-meta" class="flex items-center gap-4 text-sm text-gray-500"></div>
+                    </div>
+                    <button id="close-blog-modal" class="p-2 hover:bg-gray-100 transition-colors">
+                        <i data-lucide="x" class="w-6 h-6"></i>
+                    </button>
+                </div>
+                <div class="p-8">
+                    <div id="blog-modal-tags" class="flex flex-wrap gap-2 mb-8"></div>
+                    <div id="blog-modal-content" class="prose prose-lg max-w-none"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
