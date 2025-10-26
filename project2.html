@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEBA Security System - Yared Atrsaw</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.344.0/lucide.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <div class="min-h-screen">
+        <!-- Header with Back Button -->
+        <header class="bg-black text-white p-6">
+            <div class="max-w-6xl mx-auto flex items-center justify-between">
+                <button onclick="goBack()" class="back-button">
+                    <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                    <span>Back to Portfolio</span>
+                </button>
+                <h1 class="text-2xl font-bold">Project Details</h1>
+            </div>
+        </header>
+
+        <!-- Project Content -->
+        <main class="bg-white min-h-screen">
+            <div class="max-w-4xl mx-auto px-6 py-12">
+                <!-- Project Header -->
+                <div class="mb-12">
+                    <div class="project-image-container mb-8">
+                        <img
+                            src="images/ueba.png"
+                            alt="UEBA Security System"
+                        />
+                    </div>
+                    <h1 class="text-4xl font-bold text-gray-900 mb-4">UEBA Security System</h1>
+                    <p class="text-xl text-gray-600 mb-6">AI-based User and Entity Behavior Analytics system processing millions of network events for national security.</p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="tag">AI</span>
+                        <span class="tag">Security</span>
+                        <span class="tag">Real-time Processing</span>
+                    </div>
+                </div>
+
+                <!-- Project Process -->
+                <div class="prose prose-lg max-w-none">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Project Background</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        Selected as one of 200 students from 6,000+ applicants to develop Ethiopia's next-generation cybersecurity infrastructure at INSA. This project represents a critical component of national security infrastructure.
+                    </p>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 mt-12">System Architecture</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        The system was designed with scalability and real-time processing in mind:
+                    </p>
+                    <ul class="text-lg text-gray-700 leading-relaxed mb-6 space-y-2">
+                        <li>• Real-time event processing pipeline handling millions of events/second</li>
+                        <li>• Machine learning models for anomaly detection</li>
+                        <li>• Integration with national network infrastructure</li>
+                        <li>• Dashboard for security analysts</li>
+                    </ul>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 mt-12">Development Process</h2>
+                    <div class="space-y-8">
+                        <div class="bg-gray-50 p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Stage 1: Requirements Analysis</h3>
+                            <p class="text-gray-700">Analyzed national security requirements and existing infrastructure. Worked with security experts to understand threat patterns and detection needs.</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Stage 2: Algorithm Development</h3>
+                            <p class="text-gray-700">Developed machine learning algorithms for behavior analysis. Focused on reducing false positives while maintaining high detection accuracy for genuine threats.</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Stage 3: System Integration</h3>
+                            <p class="text-gray-700">Integrated the system with existing network infrastructure. This involved working with network engineers and ensuring compatibility with current security tools.</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Stage 4: Testing & Optimization</h3>
+                            <p class="text-gray-700">Conducted extensive testing with real network data. Optimized performance to handle the massive scale of national network traffic while maintaining real-time processing capabilities.</p>
+                        </div>
+                    </div>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 mt-12">Key Achievements</h2>
+                    <ul class="text-lg text-gray-700 leading-relaxed mb-6 space-y-2">
+                        <li>• Reduced false positive rate by 40%</li>
+                        <li>• Implemented adversarial resilience testing</li>
+                        <li>• Handles noisy and incomplete data effectively</li>
+                        <li>• Optimized for large-scale deployment</li>
+                    </ul>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 mt-12">Technologies Used</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        C++, Python, TensorFlow, distributed systems, real-time processing frameworks. The system represents a significant advancement in Ethiopia's cybersecurity capabilities.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        
+        // Initialize Lucide icons
+        document.addEventListener('DOMContentLoaded', function() {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
