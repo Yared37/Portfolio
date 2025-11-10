@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amharic NLP Model - Yared Atrsaw</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.344.0/lucide.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <div class="min-h-screen">
+        <!-- Header with Back Button -->
+        <header class="bg-black text-white p-6">
+            <div class="max-w-6xl mx-auto flex items-center justify-between">
+                <button onclick="goBack()" class="back-button">
+                    <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                    <span>Back to Portfolio</span>
+                </button>
+                <h1 class="text-2xl font-bold">Project Details</h1>
+            </div>
+        </header>
+
+        <!-- Project Content -->
+        <main class="bg-white min-h-screen">
+            <div class="max-w-4xl mx-auto px-6 py-12">
+                <!-- Project Header -->
+                <div class="mb-12">
+                    <div class="project-image-container mb-8">
+                        <img
+                            src="images/Amharic_NLP.png"
+                            alt="Amharic NLP Model"
+                        />
+                    </div>
+                    <h1 class="text-4xl font-bold text-gray-900 mb-4">Amharic NLP Model</h1>
+                    <p class="text-xl text-gray-600 mb-6">Developed an advanced NLP model for Amharic language processing with optimized tokenization and embeddings.</p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="tag">NLP</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">TensorFlow</span>
+                    </div>
+                </div>
+
+                <!-- Project Process -->
+                <div class="prose prose-lg max-w-none">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Project Overview</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        This project focuses on developing natural language processing capabilities for Amharic, one of Ethiopia's most widely spoken languages. The challenge was creating effective tokenization and embedding methods for a low-resource language.
+                    </p>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 mt-12">Technical Approach</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        The development process involved several key stages:
+                    </p>
+                    <ul class="text-lg text-gray-700 leading-relaxed mb-6 space-y-2">
+                        <li>• Built custom tokenizers optimized for Amharic morphology</li>
+                        <li>• Implemented word embeddings using FastText and BERT-based models</li>
+                        <li>• Trained on local text corpora with over 1M sentences</li>
+                        <li>• Evaluated using precision, recall, and F1 metrics</li>
+                    </ul>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 mt-12">Development Stages</h2>
+                    <div class="space-y-8">
+                        <div class="bg-gray-50 p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Stage 1: Data Collection</h3>
+                            <p class="text-gray-700">Collected and cleaned Amharic text corpora from various sources including news articles, literature, and social media posts. This involved working with local institutions and community organizations.</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Stage 2: Tokenization Development</h3>
+                            <p class="text-gray-700">Created custom tokenizers that understand Amharic's unique script and morphology. This was crucial since standard tokenizers designed for Latin scripts don't work well with the Ge'ez script.</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Stage 3: Model Training</h3>
+                            <p class="text-gray-700">Trained multiple embedding models using different approaches - FastText for subword information and BERT-based models for contextual understanding. This required significant computational resources and careful hyperparameter tuning.</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Stage 4: Evaluation & Optimization</h3>
+                            <p class="text-gray-700">Evaluated models on various NLP tasks including text classification, named entity recognition, and sentiment analysis. Achieved 87% accuracy on classification tasks, significantly outperforming baseline models.</p>
+                        </div>
+                    </div>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 mt-12">Results & Impact</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        The model achieved 87% accuracy on classification tasks and significantly outperformed baseline models. This work was presented at the Ethiopian Tech Expo and is being integrated into INSA's security systems.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        This research enables better text analysis for Amharic content and opens doors for more Ethiopian language AI applications, contributing to the development of AI tools that serve local communities.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        
+        // Initialize Lucide icons
+        document.addEventListener('DOMContentLoaded', function() {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>

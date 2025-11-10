@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Census Platform - Yared Atrsaw</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.344.0/lucide.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <div class="min-h-screen">
+        <!-- Header with Back Button -->
+        <header class="bg-black text-white p-6">
+            <div class="max-w-6xl mx-auto flex items-center justify-between">
+                <button onclick="goBack()" class="back-button">
+                    <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                    <span>Back to Portfolio</span>
+                </button>
+                <h1 class="text-2xl font-bold">Project Details</h1>
+            </div>
+        </header>
+
+        <!-- Project Content -->
+        <main class="bg-white min-h-screen">
+            <div class="max-w-4xl mx-auto px-6 py-12">
+                <!-- Project Header -->
+                <div class="mb-12">
+                    <div class="project-image-container mb-8">
+                        <img
+                            src="images/agriculture census.webp"
+                            alt="Agricultural Census Platform"
+                        />
+                    </div>
+                    <h1 class="text-4xl font-bold text-gray-900 mb-4">Agricultural Census Platform</h1>
+                    <p class="text-xl text-gray-600 mb-6">Designed data collection tools for Ethiopia's national agricultural census covering 400,000 households.</p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="tag">Full-stack</span>
+                        <span class="tag">Data Engineering</span>
+                        <span class="tag">Impact</span>
+                    </div>
+                </div>
+
+                <!-- Project Process -->
+                <div class="prose prose-lg max-w-none">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Mission</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        Support Ethiopia's Ministry of Agriculture in collecting comprehensive agricultural data from 400,000 rural households across the country. This data is crucial for national policy decisions and agricultural development planning.
+                    </p>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 mt-12">Technical Implementation</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        The platform was designed to work in challenging rural environments:
+                    </p>
+                    <ul class="text-lg text-gray-700 leading-relaxed mb-6 space-y-2">
+                        <li>• Built offline-first data collection mobile apps</li>
+                        <li>• Designed automatic data validation and cleaning pipelines</li>
+                        <li>• Created training materials for 1,000+ field enumerators</li>
+                        <li>• Implemented sync mechanisms for low-connectivity environments</li>
+                    </ul>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 mt-12">Development Stages</h2>
+                    <div class="space-y-8">
+                        <div class="bg-gray-50 p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Stage 1: Field Research</h3>
+                            <p class="text-gray-700">Conducted extensive field research to understand the challenges of data collection in rural Ethiopia. This included visiting remote areas and understanding the technological constraints.</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Stage 2: App Development</h3>
+                            <p class="text-gray-700">Developed mobile applications that work offline and sync when connectivity is available. The apps needed to be intuitive for first-time smartphone users and handle multiple local languages.</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Stage 3: Training Program</h3>
+                            <p class="text-gray-700">Created comprehensive training materials and conducted workshops for over 1,000 field enumerators. This included both technical training and cultural sensitivity training for working with rural communities.</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Stage 4: Data Processing</h3>
+                            <p class="text-gray-700">Built robust data processing pipelines that could handle the massive volume of data while ensuring quality and consistency. Implemented automatic validation and cleaning algorithms.</p>
+                        </div>
+                    </div>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 mt-12">Challenges Solved</h2>
+                    <ul class="text-lg text-gray-700 leading-relaxed mb-6 space-y-2">
+                        <li>• Handling manual entry errors with smart validation</li>
+                        <li>• Working in areas with limited or no internet connectivity</li>
+                        <li>• Processing and aggregating data from diverse sources</li>
+                        <li>• Training non-technical users on digital tools</li>
+                    </ul>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 mt-12">Outcome</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Successfully contributed to national policy decisions with accurate, timely agricultural data. The platform enabled the collection of comprehensive agricultural data that informed national development strategies and agricultural policies.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        
+        // Initialize Lucide icons
+        document.addEventListener('DOMContentLoaded', function() {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
